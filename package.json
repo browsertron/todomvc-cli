@@ -1,0 +1,38 @@
+{
+  "name": "todomvc-cli",
+  "version": "0.0.0",
+  "description": "A cli for quickly starting the todomvc server",
+  "main": "index.js",
+  "bin": {
+    "todomvc": "./index.js",
+    "todomvc-cli": "./index.js"
+  },
+  "scripts": {
+    "build": "rm -rf dist && pkg . --public --out-path dist",
+    "prerelease": "npm run build",
+    "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/browsertron/todomvc-cli.git"
+  },
+  
+  "keywords": [
+    "todomvc",
+    "cli"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/browsertron/todomvc-cli/issues"
+  },
+  "homepage": "https://github.com/browsertron/todomvc-cli#readme",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "todomvc": "^0.1.1"
+  },
+  "devDependencies": {
+    "pkg": "^4.3.4"
+  }
+}

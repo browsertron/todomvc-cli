@@ -1,2 +1,16 @@
 # todomvc-cli
-A self-contained server cli for testing e2e test libraries
+A cli for quickly starting the todomvc server
+
+## Usage
+
+`npx todomvc-cli`
+
+or
+
+```
+npm i -g todomvc-cli
+todomvc
+```
+
+## License
+MIT
