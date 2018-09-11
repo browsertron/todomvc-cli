@@ -1,6 +1,6 @@
 {
   "name": "todomvc-cli",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A cli for quickly starting the todomvc server",
   "main": "index.js",
   "bin": {
